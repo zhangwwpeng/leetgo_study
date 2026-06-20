@@ -1,0 +1,21 @@
+[tool.pyrefly]
+project-includes = ["python"]
+python-interpreter-path = "python/.venv/bin/python"
+python-version = "3.9"
+
+[tool.pyright]
+include = ["python"]
+venvPath = "python"
+venv = ".venv"
+pythonVersion = "3.9"
+reportWildcardImportFromLibrary = "none"
+reportMissingTypeStubs = "none"
+reportDeprecated = "none"
+
+[tool.ruff]
+src = ["python"]
+line-length = 120
+
+[tool.ruff.lint]
+# leetgo 模板使用 `from typing import *` / `from leetgo_py import *`
+ignore = ["F403", "F405"]
