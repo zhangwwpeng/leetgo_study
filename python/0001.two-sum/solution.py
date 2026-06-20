@@ -1,4 +1,4 @@
-# Created by zhang-mo-peng-mo-peng-mo-mo-peng at 2026/06/19 14:23
+# Created by zhang-mo-peng-mo-peng-mo-mo-peng at 2026/06/21 00:18
 # leetgo: 1.4.17
 # https://leetcode.cn/problems/two-sum/
 
@@ -6,7 +6,6 @@ from typing import *
 from leetgo_py import *
 
 # @lc code=begin
-
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -20,7 +19,6 @@ class Solution:
             if num_b == num:
                 indexb = i
         return [indexa, indexb]
-
 
 # @lc code=end
 
