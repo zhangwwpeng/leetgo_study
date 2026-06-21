@@ -7,18 +7,16 @@ from leetgo_py import *
 
 # @lc code=begin
 
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        num_b = 0
-        indexa, indexb = 0, 0
-        for i, num in enumerate(nums):
-            num_b = target - num
-            if num_b in nums:
-                indexa = i
-        for i, num in enumerate(nums):
-            if num_b == num:
-                indexb = i
-        return [indexa, indexb]
+        mp = {}
+        for i,num in enumerate(nums):
+            other = target - num
+            if other in mp:
+                return [mp[other],i]
+            mp[num] = i
+
 
 # @lc code=end
 

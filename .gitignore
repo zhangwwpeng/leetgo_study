@@ -1,0 +1,25 @@
+# Leetgo tool config
+leetgo.yaml
+
+# Python environment & deps
+python/.venv/
+python/requirements.txt
+**/__pycache__/
+*.py[cod]
+
+# Rust build & project scaffolding
+rust/target/
+rust/Cargo.toml
+rust/Cargo.lock
+rust/src/main.rs
+
+# C/C++ build artifacts
+*.o
+*.out
+a.out
+
+# Generated contest workspace
+contest/
+
+# OS
+.DS_Store
