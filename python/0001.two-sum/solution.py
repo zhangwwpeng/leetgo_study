@@ -16,7 +16,7 @@ class Solution:
             if other in mp:
                 return [mp[other],i]
             mp[num] = i
-
+        return [0,0]
 
 # @lc code=end
 
